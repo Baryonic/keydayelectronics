@@ -491,6 +491,11 @@ li{
     margin:0 auto;
     animation: colorDeFuente 16s infinite alternate;
 }
+/*titulo de la seccion 2
+*/
+#section2 h2{
+    margin: 0 auto;
+}
 /*parrafos de la seccion 2: 
     margen derecha e izquierda para separar de los bordes
 */

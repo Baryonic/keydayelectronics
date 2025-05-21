@@ -453,13 +453,15 @@ nav p:hover{
 #robot_01_img_id:hover{
     filter: brightness(1.1);
 }
-/* titulos de las listas de la tabla de la seccion 1 (nuestros productos/servicios)
+/* titulos de la tabla de la seccion 1 (nuestros productos/servicios)
     tamanyo de fuente 
     familia de fuente
+    padding para separar del la izquierda
 */
-.section1_table_class tr td ul h2{
+.section1_table_class tr td h2{
     font-size: 30px;
     font-family: monospace;
+    padding-left: 30px;
 }
 /* elementos alistados en la lista de la tabla de la seccion 1
     familia serif
@@ -492,9 +494,10 @@ li{
     animation: colorDeFuente 16s infinite alternate;
 }
 /*titulo de la seccion 2
+    padding para separar de la izquierda
 */
 #section2 h2{
-    margin: 0 auto;
+    padding-left: 30px;
 }
 /*parrafos de la seccion 2: 
     margen derecha e izquierda para separar de los bordes

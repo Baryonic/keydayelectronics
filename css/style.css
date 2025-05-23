@@ -294,16 +294,6 @@ Section 1
     color: #515557;
     padding-left: 15px;
 }
-/*tabla de la seccion: recortar esquinas
-*/
-.section1_class table{
-    border-radius: 10px;
-}
-/*celdas de la tabla de la seccion1: recortar esquinas
-*/
-.section1_class table td{
-    border-radius: 10px;
-}
 /*hover de la seccion 1: color de fondo lineal 7 segundos
 */
 .section1_class:hover{
@@ -405,51 +395,45 @@ nav p{
 nav p:hover{
     animation: colorDeFondo04 6s forwards;
 }
-/*tabla de la seccion 1 (clase)
+/*divs de la seccion 1 (clase)
     recortar esquinas
     anchura maxima 800 pixeles
-    margin 0 auto para centrar la tabla
+    margin 0 auto para centrar los divs
     animacion de color de borde ciclica
+    margin bottom para separar de la siguiente seccion
 */
-.section1_table_class{
+.section1_div_class{
     border-radius: 10px;
-    max-width: 800px;
+    max-width: 800px; 
     margin:0 auto;
     animation: colorDeBorde 16s infinite alternate;
+    display: block;
+    margin-bottom: 5px;
 }
-/*hover de la tabla de la seccion 1: cambiar el color de la fuente
+
+/*hover del div de la seccion 1: cambiar el color de la fuente
 */
-.section1_table_class:hover{
+.section1_div_class:hover{
     animation: colorDeFuente 6s forwards;
 }
-/*celdas de tabla de la seccion 1: recortar esquinas
-*/
-.section1_table_class tr td{
-    border-radius: 10px
-}
-/*parrafos de lasceldas de la tabla de la seccion 1: 
+/*parrafos de los divs de la seccion 1: 
     margin left para separar de la izquierda
     cambiar la familia de la fuente
     padding para mas separacion
 */
-.section1_table_class tr td p{
-    margin-left: 10px;
-    font-family: 'Lucida Handwriting',cursive;
-    padding-left: 15px; 
-    padding-right: 15px;
-}
-/*contenedor de la imagen del robot de la seccion 1
-    anchura 50% ocupara la mitad de la seccion
-*/
-#robot_img_container_id{
-    width: 50%;
+.section1_div_class p{
+    margin-left: 25px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding-bottom: 5px;
 }
 /*la imagen del robot
-    anchura 100% ocupara toda la celda
+    anchura 50% ocupara la mitad
     transicion 0.5 segundos para suavidad
 */
 #robot_01_img_id{
-    width: 100%;
+    max-height: 560px;
+    width: 30%;
+    float: right;
     transition: filter 0.5s ease;
 }
 /*hover de la imagen del robot: aumentar exposicion de la imagen
@@ -457,15 +441,15 @@ nav p:hover{
 #robot_01_img_id:hover{
     filter: brightness(1.1);
 }
-/* titulos de la tabla de la seccion 1 (nuestros productos/servicios)
+/* titulos de los divs de la seccion 1 (nuestros productos/servicios)
     tamanyo de fuente 
     familia de fuente
     padding para separar del la izquierda
 */
-.section1_table_class tr td h2{
-    font-size: 30px;
-    font-family: monospace;
-    padding-left: 30px;
+.section1_div_class div h2{
+    font-size: 22px;
+    font-family: 'Arial Narrow Bold', sans-serif;
+    padding-left: 35px;
 }
 /* elementos alistados en la lista de la tabla de la seccion 1
     familia serif
@@ -478,12 +462,6 @@ li{
    font-size: large;
    padding-right:20px;
    padding-bottom: 5px;
-}
-/*hover de las celdas de la tabla de la seccion1: 
-    animaciomn de color de fondo 6 segundo lineal
-*/
-.section1_table_class tr td:hover{
-    animation: colorDeFuente02 6s forwards;
 }
 /*seccion2
     recortar las esquinas

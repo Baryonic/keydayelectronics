@@ -70,12 +70,11 @@
     </nav>
     <!--seccion 1-->
     <section id="section1">
-        <!--tabla que contiene 3 filas, pero la imagen de la segunda fila ocupa 2 filas-->
-        <table class="section1_table_class">
-            <!--esta fila contiene una lista y la imagen que ocupa 2 filas-->
-            <tr>
-                <!--esta celda contiene un titulo h2 y la lista-->
-                <td>
+        <div class="section1_div_class">
+                        <div>
+                    <img id="robot_01_img_id" src="images/human_robot_11.png" alt="human robot img failed">
+            </div>
+            <div>
                     <h2>Nuestros Productos</h2>
                      <ul class="ul_class_01">
                         <li>Robots asistentes: gestione sus tareas dom&eacute;sticas con nuestros avanzados robots humanoides.</li>
@@ -85,27 +84,18 @@
                         <li>Componentes rob&oacute;ticos: Elija los mejores componentes para sus proyectos</li>
                         <li>Placas base y Kits Arduino: perfecto tanto para principiantes como para profesionales para construir, testear e innovar.</li>
                     </ul>
-                </td>
-                <!--imagen dentro de una celda que ocupa 2 filas-->
-                <td id="robot_img_container_id" rowspan="2">
-                    <img id="robot_01_img_id" src="images/human_robot_11.png" alt="human robot img failed">
-                </td>
-            </tr>
-            <!--segunda fila contiene otra lista de la misma clase-->
-            <tr>
-                <!--esta celda contiene un titulo h2 y la lista-->
-                <td>
+            </div>
+            <div>
                     <h2>Nuestros Servicios</h2>
                     <ul class="ul_class_01">
                         <li>Impresi&oacute;n 3D: desde prototipos hasta dise&ntilde;os comerciales, hacemos sus ideas realidad.</li>
                         <li>Impresi&oacute;n de placas base: use nuestro software gratuito para dise&ntilde;ar sus placas base y nos encargaremos del resto.</li>
                         <li>Reparaci&oacute;n y mantenimiento: Mano de obra experta para todos sus componentes electr&oacute;nicos y rob&oacute;ticos.</li>
                     </ul>
-                </td>
-            </tr>
-            <!--tercera fila ocupa dos columnas contiene tres parrafos -->
-            <tr>
-                <td colspan="2">
+            </div>
+
+        </div>
+        <div class="section1_div_class">
                     <p>
                         Tecnolog&iacute;a y herramientas de vanguardia para alimentar su creatividad.
                     </p>
@@ -115,9 +105,10 @@
                     <p>
                         Un equipo dedicado listo para guiarle en cada paso del camino.
                     </p>
-                </td>
-            </tr>
-        </table>
+        </div>
+
+
+
     </section>
     <!--seccion 2 contiene el titulo de la seccion y 4 parrafos-->
     <section id="section2">

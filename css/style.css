@@ -371,6 +371,10 @@ tabla footer:
 #footer_table_id tr td p{
     font-size: 17px;
 }
+/*imagen de youtube: padding abajo porque la imagen es rectangular*/
+#yt_img_id{
+    padding-bottom: 8px;   
+}
 /*
 ________________________________________________________________________________________________________________________________________________
 ________________________________________________________________________________________________________________________________________________
@@ -770,6 +774,16 @@ label{
 button{
     padding-top: 5px;
     padding-bottom: 5px;
+}
+/*ajustar la anchura de los inputs del nombre, correo y telefono*/
+#name_id{
+    width: 255px;
+}
+#email_id{
+    width: 181px;
+}
+#tel_id{
+    width: 172px;
 }
 /*
 ________________________________________________________________________

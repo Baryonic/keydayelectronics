@@ -770,3 +770,10 @@ parrafos de la tabla de la seccion 1
 .section1_class table tr td p{
     padding-left: 15px;
 }
+/*imagen del mapa 
+*/
+#map_img_id{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}

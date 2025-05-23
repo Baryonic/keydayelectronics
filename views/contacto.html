@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <!--idioma de la pagina-->
 <html lang="es">
+
 <head>
     <!--codificacion de los caracteres-->
     <meta charset="UTF-8">
@@ -22,45 +23,46 @@
     <title>Contacto</title>
 </head>
 <!--body class contacto para que el css sepa la pagina en la que se encuentra actualmente-->
+
 <body class="contacto">
     <!--seccion header-->
     <header>
         <div>
-          <!--tabla que contiene enlaces en celda (funciona como menu de navegacion)-->
-          <table class="menu_table_class">
-            <tr>
-                <!--td que contiene la imagen del logo class home para cambiar de fondo-->
-                <td class="menu-home">
-                    <a href="../index.html">
-                        <img id="logo_img_id" src="../images/keyday01.png" alt="logo img failed">
-                    </a>
-                </td>
-                <!--td que contiene el enlace a productos.html class productos para cambiar de fondo-->
-                <td  class="menu-productos">
-                    <a href="productos.html" class="menu_a">
-                        <p class="menu_p">
-                            Productos
-                        </p>
-                    </a>
-                </td>
-                <!--td que contiene el enlace a presupuestos.html class presupuestos para cambiar de fondo-->
-                <td  class="menu-presupuestos">
-                    <a href="presupuestos.html" class="menu_a">
-                        <p class="menu_p">
-                            Presupuestos
-                        </p>
-                    </a>
-                </td>
-                <!--td que contiene el enlace a contacto.html class contacto para cambiar de fondo-->
-                <td class="menu-contacto">
-                    <a href="contacto.html" class="menu_a">
-                        <p class="menu_p">
-                            Contacto
-                        </p>
-                    </a>
-                </td>
-            </tr>
-           </table>
+            <!--tabla que contiene enlaces en celda (funciona como menu de navegacion)-->
+            <table class="menu_table_class">
+                <tr>
+                    <!--td que contiene la imagen del logo class home para cambiar de fondo-->
+                    <td class="menu-home">
+                        <a href="../index.html">
+                            <img id="logo_img_id" src="../images/keyday01.png" alt="logo img failed">
+                        </a>
+                    </td>
+                    <!--td que contiene el enlace a productos.html class productos para cambiar de fondo-->
+                    <td class="menu-productos">
+                        <a href="productos.html" class="menu_a">
+                            <p class="menu_p">
+                                Productos
+                            </p>
+                        </a>
+                    </td>
+                    <!--td que contiene el enlace a presupuestos.html class presupuestos para cambiar de fondo-->
+                    <td class="menu-presupuestos">
+                        <a href="presupuestos.html" class="menu_a">
+                            <p class="menu_p">
+                                Presupuestos
+                            </p>
+                        </a>
+                    </td>
+                    <!--td que contiene el enlace a contacto.html class contacto para cambiar de fondo-->
+                    <td class="menu-contacto">
+                        <a href="contacto.html" class="menu_a">
+                            <p class="menu_p">
+                                Contacto
+                            </p>
+                        </a>
+                    </td>
+                </tr>
+            </table>
         </div>
     </header>
     <!--nav con el titulo de contacto-->
@@ -68,67 +70,75 @@
         <h1>Contacto</h1>
     </nav>
     <!--seccion 1 que contiene una tabla-->
-    <section class="section1_class">
+    <section class="section1_class" id="section1_contact_id">
         <!--titulo de la seccion-->
         <h2>Informaci&oacute;n de contacto</h2>
-        <!--tabla que contiene dos celdas, una con una imagen y otra con unos parrafos-->
-        <table>
+        <div>
+            <div>
+                <!--la imagen se encuentra dentro de un enlace a bing maps-->
+                <a
+                    href="https://www.bing.com/maps?q=123+Sunset+Lane%2C+Suite+7+Honolulu%2C+HI+96815&FORM=HDRSC6&cp=21.278298%7E-157.823307&lvl=14.6">
+                    <img src="../images/honolulu_map_01.png" alt="map image loading error" id="map_img_id">
+                </a>
+            </div>
+            <div id="section1_contact_div_id">
+                <p>
+                    Keyday Electronics&reg; se encuentra en 123 Sunset Lane, Suite 7 Honolulu, HI 96815 EEUU
+                </p>
+                <!--este parrafo contiene un enlace mailto:-->
+                <p>
+                    <a href="mailto:keydayelectronics@gmail.com">Env&iacute;enos un correo electr&oacute;nico</a>
+                    keydayelectronics@gmail.com
+                </p>
+                <p>
+                    En Keyday Electronics&reg;, la satisfacci&oacute;n de nuestros clientes es muy importante,
+                    as&iacute;
+                    que no
+                    dude en contactar con nosotros.
+                </p>
+                <p>
+                    Ll&aacute;menos en horario laboral (L-V): +34 612 34 57 89
+                </p>
+            </div>
+        </div>
+    </section>
+    <!--seccion footer-->
+    <footer id="footer_id">
+        <!--tabla de tres filas que contienen el contenido de footer-->
+        <table id="footer_table_id">
+            <!--fila de las imagenes dentro de enlaces de las redes sociales en una sola celda-->
             <tr>
-                <td >
-                    <!--la imagen se encuentra dentro de un enlace a bing maps-->
-                    <a href="https://www.bing.com/maps?q=123+Sunset+Lane%2C+Suite+7+Honolulu%2C+HI+96815&FORM=HDRSC6&cp=21.278298%7E-157.823307&lvl=14.6">
-                        <img src="../images/honolulu_map_01.png" alt="map image loading error" id="map_img_id">
-                    </a>
+                <td class="social_td_class">
+                    <a href="https://www.facebook.com"><img class="social_img_class_00"
+                            src="../images/facebooklogo.webp" alt="facebook logo not loaded"></a>
+                    <a href="https://x.com"><img class="social_img_class_00" src="../images/xlogo.png"
+                            alt="x logo not working"></a>
+                    <a href="https://www.linkedin.com"><img class="social_img_class_00" src="../images/inlogo.png"
+                            alt="linkedin logo not working"></a>
+                    <a href="https://www.instagram.com/keyday_electronics"><img class="social_img_class_00"
+                            src="../images/instalogo.png " alt="instagram logo not working"></a>
+                    <a href="https://www.youtube.com"><img class="social_img_class_00" id="yt_img_id"
+                            src="../images/ytlogo.png" alt="youtube logo not working"></a>
                 </td>
+            </tr>
+            <!--fila que contiene la direccion de la empresa-->
+            <tr>
                 <td>
                     <p>
-                        Keyday Electronics&reg; se encuentra en 123 Sunset Lane, Suite 7 Honolulu, HI 96815 EEUU
+                        Keyday Electronics 123 Sunset Lane, Suite 7 Honolulu, HI 96815 United States
                     </p>
-                    <!--este parrafo contiene un enlace mailto:-->
+                </td>
+            </tr>
+            <!--fila que contiene el eviso legal-->
+            <tr>
+                <td>
                     <p>
-                    <a href="mailto:keydayelectronics@gmail.com">Env&iacute;enos un correo electr&oacute;nico</a> keydayelectronics@gmail.com
-                    </p>
-                    <p>
-                        En Keyday Electronics&reg;, la satisfacci&oacute;n de nuestros clientes es muy importante, as&iacute; que no dude en contactar con nosotros.
-                    </p>
-                    <p>
-                        Contacte con nosotros telef&oacute;nicamente +34 612 34 57 89
+                        Lea nuestro <a href="aviso_legal.html" target="_blank">Aviso Legal</a>
                     </p>
                 </td>
             </tr>
         </table>
-    </section>
-  <!--seccion footer-->  
-  <footer id="footer_id">
-    <!--tabla de tres filas que contienen el contenido de footer-->
-    <table id="footer_table_id">
-        <!--fila de las imagenes dentro de enlaces de las redes sociales en una sola celda-->
-        <tr>
-                <td class="social_td_class">
-                    <a href="https://www.facebook.com"><img class="social_img_class_00" src="../images/facebooklogo.webp" alt="facebook logo not loaded"></a>
-                    <a href="https://x.com"><img class="social_img_class_00" src="../images/xlogo.png" alt="x logo not working"></a>
-                    <a href="https://www.linkedin.com"><img class="social_img_class_00" src="../images/inlogo.png" alt="linkedin logo not working"></a>
-                    <a href="https://www.instagram.com/keyday_electronics"><img class="social_img_class_00" src="../images/instalogo.png " alt="instagram logo not working"></a>
-                    <a href="https://www.youtube.com"><img class="social_img_class_00" id="yt_img_id" src="../images/ytlogo.png" alt="youtube logo not working"></a>
-                </td>
-        </tr>
-        <!--fila que contiene la direccion de la empresa-->
-        <tr>
-            <td>
-                <p >
-                    Keyday Electronics 123 Sunset Lane, Suite 7 Honolulu, HI 96815 United States
-                </p>
-            </td>
-        </tr>
-        <!--fila que contiene el eviso legal-->
-        <tr>
-            <td>
-                <p>
-                    Lea nuestro <a href="aviso_legal.html"  target="_blank">Aviso Legal</a>
-                </p>
-            </td>
-        </tr> 
-    </table>
-  </footer>
+    </footer>
 </body>
+
 </html>

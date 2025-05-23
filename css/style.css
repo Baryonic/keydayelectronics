@@ -771,10 +771,19 @@ ________________________________________________________________________
 ________________________________________________________________________
 */
 /*
-parrafos de la tabla de la seccion 1
+parrafos de la seccion 1
 */
-.section1_class table tr td p{
-    padding-left: 15px;
+#section1_contact_id div p{
+    margin-left: 15px;
+    float: top;
+}
+#section1_contact_id div{
+    display: flex;
+    align-items: center;
+}
+#section1_contact_div_id{
+    display: flex;
+    flex-direction: column;
 }
 /*imagen del mapa 
     anchura 100%
@@ -785,4 +794,5 @@ parrafos de la tabla de la seccion 1
     width: 100%;
     height: auto;
     border-radius: 10px;
+    margin: 5px;
 }

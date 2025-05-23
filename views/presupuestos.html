@@ -77,25 +77,26 @@
             <p>Solicite informaci&oacute;n acerca de impresi&oacute;n de placas base, 3D o reparaci&oacute;n de sistemas.</p>
         </div>
         <!-- formulario , la funcion onsubmit es llamada por el click de boton que redirije al archivo javascript, este siempre devuelve false para envitar mas complejidad-->
+        <!-- las labels hacen uso de del atributo pattern y required para la validacion del formulario-->
         <form id="presupuestos_form_id" onsubmit="return validarFormulario()" action="/submit-form">
             <!--label que contiene un input de tipo texto-->
             <label>
-                Nombre: <input type="text" id="name_id" name="nombre" placeholder="Introduzca su nombre" style="width:255px;">
+                Nombre: <input type="text" id="name_id" name="nombre" placeholder="Introduzca su nombre" pattern="[A-Za-z\s]+" required title="Introduzca solo letras">
             </label> 
             <!--label que contiene un input de tipo email-->
             <label>
-                Correo el&eacute;ctronico: <input type="email" id="email_id" name="email" placeholder="introduzca su correo el&eacute;ctronico" style="width:181px;">
+                Correo el&eacute;ctronico: <input type="email" id="email_id" name="email" placeholder="introduzca su correo el&eacute;ctronico" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required title="introduzca una direccion de correo electronico valida">
             </label> 
             <!--label que contiene input de tipo telefono-->
             <label >
-                N&uacute;mero de tel&eacute;fono: <input type="tel" id="tel_id" name="telefono" placeholder="introduzca su n&uacute;mero de tel&eacute;fono" style="width: 172px;">
+                N&uacute;mero de tel&eacute;fono: <input type="tel" id="tel_id" name="telefono" placeholder="introduzca su n&uacute;mero de tel&eacute;fono" pattern="\d{9}" required title="introduzca un numero de telefono de 9 digitos">
             </label>
             <!--label que contiene im textarea-->
             <label>
                 <textarea id="masinfo_id" name="masinfo" rows="5" cols="44" placeholder="solicite m&aacute;s informaci&oacute;n"></textarea>
             </label> 
             <!-- input checkbox de la politica de privacidad -->
-            <input type="checkbox" id="politica_checkbox_id">
+            <input type="checkbox" required id="politica_checkbox_id">
             <!--label del checkbox a la derecha del checkbox-->
             <label for="politica_checkbox_id">
                 He le&iacute;do y acepto la <a href="politica_de_privacidad.html" target="_blank">p&oacute;litica de privacidad</a>

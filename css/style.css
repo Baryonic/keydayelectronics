@@ -757,6 +757,20 @@ ________________________________________________________________________
 button{
     margin-bottom: 15px;
 }
+/*labels del formulario: 
+    display block para que cada label esté en una linea
+    padding para separarlas un poco
+*/
+label{
+    display: block;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+/*boton del formulario: separar de arriba y abajo con padding*/
+button{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
 /*
 ________________________________________________________________________
 ________________________________________________________________________
@@ -771,6 +785,9 @@ parrafos de la tabla de la seccion 1
     padding-left: 15px;
 }
 /*imagen del mapa 
+    anchura 100%
+    altura automatica
+    recortar esquinas
 */
 #map_img_id{
     width: 100%;
